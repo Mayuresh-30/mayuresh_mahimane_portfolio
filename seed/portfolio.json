@@ -23,6 +23,14 @@
         "institution": "Shri Shivaji Science And Arts College, Chikhli",
         "period": "Graduated 2026",
         "result": "CGPA 7.25 / 10"
+      },
+      {
+        "degree": "M.Sc. Computer Science",
+        "institution": "Shri Shivaji Science And Arts College, Chikhli",
+        "period": "Currently studying",
+        "result": "In progress",
+        "status": "Currently learning",
+        "description": "Pursuing postgraduate studies in computer science, building on my undergraduate foundation and deepening my knowledge of software and emerging technologies."
       }
     ]
   },

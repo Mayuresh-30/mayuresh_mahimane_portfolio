@@ -19,7 +19,7 @@ export function HeroSection({ profile }: { profile: Profile }) {
         </motion.div>
         <motion.div className="hero-actions" initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.28 }}>
           <a className="button button-primary" href="#projects">Explore selected work <ArrowUpRight size={16} aria-hidden="true" /></a>
-          <a className="button button-quiet" href={`mailto:${profile.email}`}><Mail size={16} aria-hidden="true" /> Get in touch</a>
+          <a className="button button-quiet" href={`mailto:${profile.email}?subject=Portfolio%20inquiry`}><Mail size={16} aria-hidden="true" /> Get in touch</a>
         </motion.div>
         <motion.div className="social-row" initial={reduceMotion ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.38 }}>
           <a href={profile.github_url} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><Github size={17} /><span>GitHub</span></a>
@@ -34,7 +34,6 @@ export function HeroSection({ profile }: { profile: Profile }) {
           <img src={profile.image_path} alt={`Portrait of ${profile.name}`} fetchPriority="high" />
         </div>
         <div className="portrait-caption"><span className="caption-dot" /> BUILT WITH CURIOSITY <span>·</span> SHIPPED WITH CARE</div>
-        <div className="portrait-index">01 <span>/</span> 04</div>
       </motion.div>
       <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><ArrowDown size={15} aria-hidden="true" /></a>
     </section>

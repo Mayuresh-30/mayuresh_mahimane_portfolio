@@ -38,6 +38,8 @@ export interface EducationItem {
   institution: string;
   period: string;
   result: string;
+  status?: string;
+  description?: string;
 }
 
 export interface Profile {
