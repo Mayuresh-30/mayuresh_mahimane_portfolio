@@ -1,0 +1,105 @@
+{
+  "profile": {
+    "name": "Mayuresh Mahimane",
+    "title": "AI Full Stack Developer",
+    "bio": "I’m an AI Full Stack Developer blending solid software engineering with practical AI. I build end-to-end applications—from responsive React experiences and Java/Python APIs to LLM-powered tools—and explore RAG and vector databases to make AI features useful, reliable, and accessible.",
+    "image_path": "/manus-storage/ProfilePicture_96eaa8dc.jpeg",
+    "email": "mayureshmahimane3005@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/mayuresh-mahimane-0895b730b/",
+    "github_url": "https://github.com/Mayuresh-30",
+    "experience": [
+      {
+        "role": "Full Stack Developer",
+        "company": "TechnoHacks Solutions Pvt. Ltd.",
+        "location": "Remote",
+        "period": "June 2026 — July 2026",
+        "description": "Built full-stack applications with React, Spring Boot, Spring Security, JWT, MySQL, and MongoDB. Delivered REST APIs, authentication, CRUD workflows, pagination, filtering, validation, and reusable responsive components.",
+        "highlights": ["5 full-stack applications", "JWT authentication", "Pagination and filtering", "Reusable React components"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Sc. Computer Science",
+        "institution": "Shri Shivaji Science And Arts College, Chikhli",
+        "period": "Graduated 2026",
+        "result": "CGPA 7.25 / 10"
+      }
+    ]
+  },
+  "skills": [
+    {"id": 1, "name": "Java", "category": "Languages", "icon_key": "siJava", "sort_order": 1},
+    {"id": 2, "name": "Python", "category": "Languages", "icon_key": "siPython", "sort_order": 2},
+    {"id": 3, "name": "JavaScript", "category": "Languages", "icon_key": "siJavascript", "sort_order": 3},
+    {"id": 4, "name": "SQL", "category": "Languages", "icon_key": "siMysql", "sort_order": 4},
+    {"id": 5, "name": "Spring Boot", "category": "Frameworks", "icon_key": "siSpringboot", "sort_order": 1},
+    {"id": 6, "name": "Spring Security", "category": "Frameworks", "icon_key": "siSpringsecurity", "sort_order": 2},
+    {"id": 7, "name": "Spring Data JPA", "category": "Frameworks", "icon_key": "siSpring", "sort_order": 3},
+    {"id": 8, "name": "Hibernate", "category": "Frameworks", "icon_key": "siHibernate", "sort_order": 4},
+    {"id": 9, "name": "React", "category": "Frameworks", "icon_key": "siReact", "sort_order": 5},
+    {"id": 10, "name": "MySQL", "category": "Data & Tools", "icon_key": "siMysql", "sort_order": 1},
+    {"id": 11, "name": "MongoDB", "category": "Data & Tools", "icon_key": "siMongodb", "sort_order": 2},
+    {"id": 12, "name": "Git", "category": "Data & Tools", "icon_key": "siGit", "sort_order": 3},
+    {"id": 13, "name": "GitHub", "category": "Data & Tools", "icon_key": "siGithub", "sort_order": 4},
+    {"id": 14, "name": "Maven", "category": "Data & Tools", "icon_key": "siApachemaven", "sort_order": 5},
+    {"id": 15, "name": "IntelliJ IDEA", "category": "Data & Tools", "icon_key": "siIntellijidea", "sort_order": 6},
+    {"id": 16, "name": "Postman", "category": "Data & Tools", "icon_key": "siPostman", "sort_order": 7},
+    {"id": 17, "name": "AI", "category": "Currently Exploring", "icon_key": "sparkles", "sort_order": 1},
+    {"id": 18, "name": "LLM Integration", "category": "Currently Exploring", "icon_key": "sparkles", "sort_order": 2},
+    {"id": 19, "name": "RAG", "category": "Currently Exploring", "icon_key": "layers", "sort_order": 3},
+    {"id": 20, "name": "Vector Databases", "category": "Currently Exploring", "icon_key": "database", "sort_order": 4}
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "AI Page Summarizer",
+      "subtitle": "Chrome extension · AI reading companion",
+      "description": "A Chrome extension that extracts the current webpage, creates a concise AI-powered summary, and lets you ask follow-up questions through an integrated chat interface.",
+      "status": "completed",
+      "github_url": "https://github.com/Mayuresh-30/ai-page-summarizer",
+      "live_url": null,
+      "image_path": null,
+      "featured": true,
+      "sort_order": 1,
+      "technologies": ["React", "JavaScript", "Chrome Extension APIs", "HTML", "CSS", "AI"]
+    },
+    {
+      "id": 2,
+      "name": "Resume Screening AI",
+      "subtitle": "Python · LLM-powered candidate ranking",
+      "description": "A Python resume-screening tool that parses PDF and DOCX resumes and job descriptions, extracts structured candidate details, and uses a Groq-integrated LLM to score role fit out of 100 and rank candidates.",
+      "status": "working",
+      "github_url": "https://github.com/Mayuresh-30/resume-screening-ai",
+      "live_url": null,
+      "image_path": null,
+      "featured": true,
+      "sort_order": 2,
+      "technologies": ["Python", "Groq", "LLM", "Pydantic", "PDF", "DOCX"]
+    },
+    {
+      "id": 3,
+      "name": "Full Stack E-Commerce",
+      "subtitle": "Java + React · full-stack storefront",
+      "description": "A full-stack commerce application with a Spring Boot REST API and React storefront, featuring JWT authentication, product discovery, search, category and price filtering, pagination, product details, and session-based cart management.",
+      "status": "completed",
+      "github_url": "https://github.com/Mayuresh-30/Full-Stack-E-commerce",
+      "live_url": null,
+      "image_path": null,
+      "featured": true,
+      "sort_order": 3,
+      "technologies": ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "React", "Vite", "Tailwind CSS"]
+    },
+    {
+      "id": 4,
+      "name": "Authentication System",
+      "subtitle": "Spring Security · JWT access and refresh",
+      "description": "A full-stack authentication application with registration, login, protected pages, JWT access and refresh-token flows, and authenticated user information delivered by a Spring Boot API and React frontend.",
+      "status": "completed",
+      "github_url": "https://github.com/Mayuresh-30/AuthenticationSystem",
+      "live_url": null,
+      "image_path": null,
+      "featured": true,
+      "sort_order": 4,
+      "technologies": ["Java", "Spring Boot", "Spring Security", "JWT", "React", "Vite", "Axios", "React Router"]
+    }
+  ]
+}
