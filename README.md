@@ -1,56 +1,42 @@
 # Mayuresh Mahimane — AI Full Stack Developer Portfolio
 
-A responsive portfolio built with React, TypeScript, and Vite, with a FastAPI backend and MySQL content store. It includes project, skills, experience, education, and contact sections. The public API is read-only; there is no login or admin editor.
+A responsive, static portfolio built with React, TypeScript, and Vite. Profile, skills, experience, education, and project content are bundled from one JSON source file; no backend, database, or runtime API is required.
 
 ## Stack
 
-- React 19, TypeScript, Vite, Framer Motion
-- Python 3.11+, FastAPI, SQLAlchemy, Alembic
-- MySQL
+- React 19 and TypeScript
+- Vite
+- Framer Motion, Lucide, and Simple Icons
+
+## Source of truth
+
+Edit [`src/data/portfolio.json`](./src/data/portfolio.json) to update profile details, skills, experience, education, projects, and links. `src/data/portfolio.ts` defines the TypeScript types and exports this JSON to the app. The rendered page and `dist/` production output are generated from that source; do not maintain a separate copy of the content.
+
+Static images and icons are kept under `public/` and referenced by their public URL paths. All content shipped to the browser is public—do not place passwords, API keys, or private information in the JSON.
 
 ## Run locally (Windows)
 
-Requirements: Node.js 20+, pnpm 10.18.0, Python 3.11+, and a MySQL Server. MySQL Workbench can connect to the server but does not replace it.
-
-1. Create the database in MySQL Workbench:
-
-   ```sql
-   CREATE DATABASE portfolioConn CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-   ```
-
-2. Copy `.env.example` to `.env` and set `DATABASE_URL` to your local MySQL credentials. Keep `.env` private.
-
-3. Install Python packages and create the schema/content:
-
-   ```powershell
-   py -3 -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   python -m pip install -r requirements.txt
-   pnpm db:migrate
-   pnpm db:seed
-   ```
-
-4. Install frontend packages and start both services:
-
-   ```powershell
-   corepack prepare pnpm@10.18.0 --activate
-   pnpm install
-   pnpm dev
-   ```
-
-   Open <http://localhost:3000>. The API is on port 8000. The seed command loads starter content; running it again overwrites matching starter records.
-
-## API
-
-- `GET /api/health` — API and database status
-- `GET /api/profile` — profile, experience, education, and contact links
-- `GET /api/skills` — visible skills
-- `GET /api/projects` — published projects; filter with `?status=working`, `?status=deployed`, or `?status=completed`
-
-## Project checks
+Requirements: Node.js 20+ (npm is included). The project pins pnpm 10.18.0 in `package.json`.
 
 ```powershell
-pnpm check
-pnpm build
-python -m compileall portfolio_api
+npx --yes pnpm@10.18.0 install
+npx --yes pnpm@10.18.0 dev
 ```
+
+Open <http://localhost:3000>. Vite serves the website and refreshes it as you edit files. There is no Python environment, database, `.env` file, or second service to start.
+
+## Check and build
+
+```powershell
+npx --yes pnpm@10.18.0 check
+npx --yes pnpm@10.18.0 build
+npx --yes pnpm@10.18.0 preview
+```
+
+`pnpm build` type-checks the app and creates the static site in `dist/`. `pnpm preview` serves the production build locally, normally at <http://localhost:4173>.
+
+## Publish
+
+Deploy the contents of `dist/` to a static hosting provider. The site can be hosted without an application server or database. After changing portfolio content, rebuild and redeploy `dist/` to publish the update.
+
+Email links open the visitor's email application using `mailto:`; GitHub, LinkedIn, and project links navigate directly to their destinations. The site does not submit or store contact messages.

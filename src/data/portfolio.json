@@ -15,6 +15,14 @@
         "period": "June 2026 — July 2026",
         "description": "Built full-stack applications with React, Spring Boot, Spring Security, JWT, MySQL, and MongoDB. Delivered REST APIs, authentication, CRUD workflows, pagination, filtering, validation, and reusable responsive components.",
         "highlights": ["5 full-stack applications", "JWT authentication", "Pagination and filtering", "Reusable React components"]
+      },
+      {
+        "role": "Web Developer Intern",
+        "company": "InAmigos Foundation Pvt. Ltd.",
+        "location": "Remote",
+        "period": "Sep 2026 — Oct 2026",
+        "description": "Gain Experience in Analysing and Redesigning the Foundation's website with ui/ux tools like figma , and the top performant for the best Portfolio Website Design and Builded ",
+        "highlights": ["Figma Ui/Ux design, redesigning the website", "Implemented best practices for performance and accessibility", "Built a responsive and user-friendly portfolio website"]
       }
     ],
     "education": [

@@ -1,4 +1,4 @@
-import seed from '../../seed/portfolio.json';
+import portfolio from './portfolio.json';
 
 export type ProjectStatus = 'working' | 'deployed' | 'completed';
 
@@ -60,4 +60,4 @@ export interface PortfolioPayload {
   projects: Project[];
 }
 
-export const FALLBACK_PORTFOLIO = seed as PortfolioPayload;
+export const PORTFOLIO = portfolio as PortfolioPayload;

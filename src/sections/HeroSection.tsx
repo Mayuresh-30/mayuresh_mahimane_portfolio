@@ -15,7 +15,6 @@ export function HeroSection({ profile }: { profile: Profile }) {
         </motion.h1>
         <motion.div className="hero-intro" initial={reduceMotion ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.18 }}>
           <p className="hero-name">I’m {profile.name} <span className="hero-separator">/</span> {profile.title}</p>
-          <p className="hero-bio">{profile.bio}</p>
         </motion.div>
         <motion.div className="hero-actions" initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.28 }}>
           <a className="button button-primary" href="#projects">Explore selected work <ArrowUpRight size={16} aria-hidden="true" /></a>
