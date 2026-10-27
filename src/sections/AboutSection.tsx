@@ -8,15 +8,14 @@ const principles = [
   { icon: Workflow, number: '03', title: 'Built to evolve', text: 'Clean structure and reusable components that leave room to grow.' },
 ];
 
-export function AboutSection() {
+export function AboutSection({ bio }: { bio: string }) {
   const reduceMotion = useReducedMotion();
   return (
     <section id="about" className="content-section section-wrap">
       <SectionHeading index="01" eyebrow="A little about me" title="Engineering with curiosity." description="A grounded engineering mindset, with a growing focus on AI." />
       <div className="about-layout">
         <motion.div className="about-copy" initial={reduceMotion ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }}>
-          <p className="about-lede">I enjoy making technology feel <span>clear, capable, and human.</span></p>
-          <p>My work spans Java and Spring Boot services, React interfaces, and the systems that connect them. I’m now building Python-based AI projects and learning how LLMs, retrieval-augmented generation, and vector databases can fit into reliable full-stack products.</p>
+          <p className="about-bio">{bio}</p>
           <a className="text-link" href="#projects">See what I’m building <ArrowUpRight size={15} /></a>
         </motion.div>
         <div className="principle-list">
