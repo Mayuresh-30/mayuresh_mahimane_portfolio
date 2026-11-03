@@ -116,6 +116,19 @@
       "featured": true,
       "sort_order": 4,
       "technologies": ["Java", "Spring Boot", "Spring Security", "JWT", "React", "Vite", "Axios", "React Router"]
+    },
+    {
+      "id": 5,
+      "name": "Ai Retail Platform",
+      "subtitle": "A smart Retailer Platform for business",
+      "description": "A full stack ai retailer platform for specially shopkeepers to manage their business and daily analytics for thier stores,products, bills , customers and also provide ai based features for their business growth and development.",
+      "status" : "working",
+      "github_url": "https://github.com/Mayuresh-30/smart-ai-retail-platform",
+      "live_url": null,
+      "image_path": null,
+      "featured": true,
+      "sort_order": 5,
+      "technologies": ["Java", "Spring Boot", "Spring Security", "JWT", "React", "Vite", "Axios", "React Router"]
     }
   ]
 }
