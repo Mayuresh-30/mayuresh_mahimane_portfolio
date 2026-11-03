@@ -11,6 +11,7 @@
       {
         "role": "Full Stack Developer",
         "company": "TechnoHacks Solutions Pvt. Ltd.",
+        "logo_path": "/images/technohacks%20solutions%20logo.avif",
         "location": "Remote",
         "period": "June 2026 — July 2026",
         "description": "Built full-stack applications with React, Spring Boot, Spring Security, JWT, MySQL, and MongoDB. Delivered REST APIs, authentication, CRUD workflows, pagination, filtering, validation, and reusable responsive components.",
@@ -19,6 +20,7 @@
       {
         "role": "Web Developer Intern",
         "company": "InAmigos Foundation Pvt. Ltd.",
+        "logo_path": "/images/inAmigos%20foundation%20logo.png",
         "location": "Remote",
         "period": "Sep 2026 — Oct 2026",
         "description": "Gain Experience in Analysing and Redesigning the Foundation's website with ui/ux tools like figma , and the top performant for the best Portfolio Website Design and Builded ",

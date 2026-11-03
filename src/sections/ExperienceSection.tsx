@@ -11,9 +11,12 @@ export function ExperienceSection({ items }: { items: ExperienceItem[] }) {
       <div className="experience-list">
         {items.map((item, index) => (
           <motion.article className="experience-card" key={`${item.company}-${item.period}`} initial={reduceMotion ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: reduceMotion ? 0 : index * 0.08 }}>
-            <div className="experience-period"><span className="timeline-dot" />{item.period}</div>
+            <div className="experience-period">
+              <img className="experience-company-logo" src={item.logo_path} alt="" loading="lazy" decoding="async" />
+              <div className="experience-period-date"><span className="timeline-dot" />{item.period}</div>
+            </div>
             <div className="experience-details">
-              <div className="experience-title-row"><div><h3>{item.role}</h3><p className="experience-company">{item.company} <span>·</span> {item.location}</p></div><ArrowUpRight className="experience-arrow" size={18} aria-hidden="true" /></div>
+              <div className="experience-title-row"><div><h3>{item.role}</h3><p className="experience-company"><span className="experience-company-name">{item.company}</span><span className="experience-company-separator">·</span><span className="experience-company-location">{item.location}</span></p></div><ArrowUpRight className="experience-arrow" size={18} aria-hidden="true" /></div>
               <p className="experience-description">{item.description}</p>
               <div className="experience-tags">{item.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
             </div>

@@ -121,12 +121,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .experience-list { border-top: 1px solid var(--line); }
 .experience-card { display: grid; grid-template-columns: minmax(170px, .32fr) 1fr; gap: 30px; padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
-.experience-period { display: flex; align-items: center; gap: 10px; padding-top: 4px; color: var(--muted); font: 400 10px var(--mono); letter-spacing: .035em; }
+.experience-period { display: flex; align-items: flex-start; flex-direction: column; gap: 12px; padding-top: 4px; color: var(--muted); font: 400 10px var(--mono); letter-spacing: .035em; }
+.experience-period-date { display: flex; align-items: center; gap: 10px; }
+.experience-company-logo { width: 120px; height: 120px; flex: 0 0 auto; background: #fff; object-fit: contain; }
 .experience-details { max-width: 780px; }
 .experience-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
 .experience-title-row h3 { margin: 0; font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -.025em; }
-.experience-company { margin: 7px 0 0; color: var(--accent); font-size: 11px; }
-.experience-company span { margin: 0 4px; color: var(--muted-2); }
+.experience-company { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin: 7px 0 0; color: var(--accent); font-size: 11px; }
+.experience-company-separator { color: var(--muted-2); }
 .experience-arrow { color: var(--muted-2); }
 .experience-description { max-width: 700px; margin: 17px 0 15px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .experience-tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -233,6 +235,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .skill-badge { min-height: 34px; padding: 0 9px; font-size: 10px; }
   .experience-card { grid-template-columns: 1fr; gap: 11px; padding: 22px 0 24px; }
   .experience-period { font-size: 9px; }
+  .experience-company-logo { width: 100px; height: 100px; }
   .experience-title-row h3 { font-size: 17px; }
   .experience-description { margin-top: 13px; font-size: 11px; }
   .project-controls { align-items: flex-start; flex-direction: column; gap: 10px; }

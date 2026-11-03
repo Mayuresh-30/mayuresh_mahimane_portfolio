@@ -27,6 +27,7 @@ export interface Project {
 export interface ExperienceItem {
   role: string;
   company: string;
+  logo_path: string;
   location: string;
   period: string;
   description: string;
