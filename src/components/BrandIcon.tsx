@@ -42,7 +42,9 @@ interface BrandIconProps {
 
 export function BrandIcon({ iconKey, label, className = '' }: BrandIconProps) {
   const shared = { className: `brand-icon ${className}`, 'aria-hidden': true as const };
-  if (iconKey === 'siJava') return <img {...shared} src="/icons/java.svg" alt="" decoding="async" />;
+  if (iconKey === 'siJava') {
+    return <span {...shared} className={`${shared.className} brand-icon-java`} />;
+  }
   const icon = iconKey ? registry[iconKey] : undefined;
 
   if (icon) {

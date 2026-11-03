@@ -83,7 +83,7 @@
       "name": "Resume Screening AI",
       "subtitle": "Python · LLM-powered candidate ranking",
       "description": "A Python resume-screening tool that parses PDF and DOCX resumes and job descriptions, extracts structured candidate details, and uses a Groq-integrated LLM to score role fit out of 100 and rank candidates.",
-      "status": "working",
+      "status": "completed",
       "github_url": "https://github.com/Mayuresh-30/resume-screening-ai",
       "live_url": null,
       "image_path": null,

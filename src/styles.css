@@ -31,7 +31,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 ::selection { color: #071311; background: var(--accent); }
 
-.site-shell { position: relative; overflow: hidden; }
+.site-shell { position: relative; overflow: clip; }
 .ambient-glow { position: absolute; z-index: 0; width: 520px; height: 520px; border-radius: 50%; filter: blur(135px); pointer-events: none; opacity: .08; }
 .ambient-glow-top { top: 40px; right: -220px; background: var(--accent); }
 .ambient-glow-bottom { top: 1650px; left: -330px; background: #6176ce; opacity: .06; }
@@ -115,6 +115,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .skill-badge { display: inline-flex; align-items: center; gap: 9px; min-height: 37px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; color: #d0dcda; background: rgba(255,255,255,.018); font-size: 11px; transition: border-color .2s ease, color .2s ease, background .2s ease, transform .2s ease; }
 .skill-badge:hover { transform: translateY(-2px); border-color: rgba(115,215,194,.36); color: var(--text); background: rgba(115,215,194,.055); }
 .brand-icon { width: 15px; height: 15px; flex: 0 0 auto; color: var(--accent); }
+.brand-icon-java { width: 18px; height: 18px; background-color: currentColor; -webkit-mask: url('/icons/java.png') center / contain no-repeat; mask: url('/icons/java.png') center / contain no-repeat; }
 .skill-group-learning .skill-badge { border-color: rgba(165,183,255,.18); background: rgba(165,183,255,.035); }
 .skill-group-learning .brand-icon { color: var(--lavender); }
 
